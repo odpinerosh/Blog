@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Un blog personal</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" title="no title" title="no title" >
+  </head>
+  <body>
+
+      <header class="encabezado">
+
+        <figure class="imgLogo">
+          <a class="logo" href="https://platzi.com/">
+            <img src="imagenes/platzi-logo.png" alt="Logo Platzi"  />
+          </a>
+        </figure>
+
+        <nav class="menu">
+
+          <ul>
+            <li class="linea cursos"><a href="https://platzi.com/cursos" target="_blank" >Cursos</a></li>
+            <li class="linea blog"><a href="https://platzi.com/blog" target="_blank">Blog</a></li>
+            <li class="linea faq"><a href="https://platzi.com/faq" target="_blank">FAQ</a></li>
+            <li class="linea horarios"><a href="https://platzi.com/horarios" target="_blank">Horarios</a></li>
+            <li class="live"><a href="https://platzi.com/live" target="_blank">Live</a></li>
+          </ul>
+
+          <button type="button" name="button">Inicia sesión</button>
+
+        </nav>
+
+
+
+      </header>
+
+      <section class="principal">
+        <div class="div">
+          <div class="buscar">
+            <form class="frmBuscar" action="index.html" method="post">
+              <label>
+                <input type="search" name="name" value="" placeholder="Buscar ..." class="txtBuscar">
+              </label>
+              <input type="submit" name="btnBuscar" value="" class="btnBuscar">
+            </form>
+          </div>
+
+          <div class="articulo">
+            <img src="imagenes/CoverBlog.jpg" alt="" width="900px" />
+            <div class="lblArticulo">
+              <header class="lblArticuloHeader">
+                <h2>Atrapasueños fabricado con código HTML y CSS</h2>
+              </header>
+              <footer class="lblArticuloFooter">
+                <div class="divAutor">
+                  <img src="imagenes/DanielPineros.jpg" alt="Daniel Piñeros" class="imgAvatar" width="35" height="35"/>
+                  <p class="autor">
+                    Daniel Piñeros
+                  </p>
+                </div>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+              </footer>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+      <section class="articulos">
+
+        <div class="div">
+
+          <div class="contenedor">
+
+
+
+          <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/dinero.jpg" alt="Dinero" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Mejora tu calidad de vida manejando mejor tu dinero</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Sergio Zafra
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/Node.jpg" alt="Node" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Crea microservicios JS con Node</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Marizabel Dimitri
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/foto.jpg" alt="Fotografia" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Trucos de fotografía digital a tu alcance</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Erik Raúl Sierra
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/santiago.jpg" alt="Platzi Talks" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Prepárate: llegan las Platzi Talks a Santiago</h2>
+              </a>
+
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Reinaldo Suárez
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/chispas.jpg" alt="chispas" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Recupera la chispa en tu sitio Web</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Bernardo Soto Riviera
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/mundo.jpg" alt="MundoWeb" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Diez herramientas útiles para tus viajes</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Lorena Alcántara
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/alaire.jpg" alt="Radio Platzi" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Estamos Al Aire: Platzi en la radio</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Iván Andrés Calderón
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/tipografia.jpg" alt="Tipografia" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Tipografía en tiempos de diseño Responsive</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Zulay Armente
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/growth.jpg" alt="Heramientas" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Herramientas gratuitas para programadores</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Dolores Díaz
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/manos.jpg" alt="Paz Esquiva" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">¿Por qué nos esquiva la Paz? Análisis</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Laura Piñeros
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/plaziconf.png" alt="PlatziConf" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Lo que vimos en el Platzi Conf de México</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Laura Piñeros
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/cabina.jpg" alt="Londres" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Programando en las calles de Londres</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Rob Cullen JR.
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/correr.jpeg" alt="Meta de Marca" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Cómo lograr que tu marca llegue a la meta</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Gerardine Otálora
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/maletin.jpg" alt="Maletin" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Ampliando tu portafolio de marca personal</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Orlando Virmaludzi
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+            <article class="publicacion">
+
+            <header class="pubHeader">
+              <a href="#">
+                <figure class="imgPublicacion">
+                  <img src="imagenes/estrategia.jpg" alt="Estrategia" height="200px" width="300px"/>
+                </figure>
+                <h2 class="h2Publicacion">Cómo generar una estrategia exitosa para tu proyecto</h2>
+              </a>
+            </header>
+
+            <footer class="pubFooter">
+                <p>
+                  Douglas Mortimer
+                </p>
+                <time class="fechapub" datetime="{{date format='MM-DD-YYYY'}}">septiembre 21 2016</time>
+            </footer>
+            </article>
+
+
+         </div>
+
+
+
+      </div>
+
+      </section>
+
+
+ </body>
+</html>
