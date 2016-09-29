@@ -3,6 +3,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h2 {
+  margin: 0;
+}
+
 
 
 .imgLogo {
@@ -19,7 +23,7 @@ body {
 }
 
 .encabezado {
-  background: #273b47;
+  background: #1C3643;
   display: flex;
   justify-content: space-between;
 }
@@ -78,7 +82,7 @@ body {
 }
 
 
-.buscar {
+.frmBuscar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -92,6 +96,7 @@ body {
   border: 0;
   height: 30px;
   font-size: 15px;
+  margin-right: 5px;
 
 }
 
@@ -113,6 +118,7 @@ body {
   margin: auto;
   display: block;
   position: relative;
+
 }
 
 .lblArticulo {
@@ -123,26 +129,22 @@ body {
   bottom: 50px;
   background: rgba(255, 255, 255, 0.8);
   padding: 25px;
+  color: #515151;
 }
 
 .lblArticuloHeader {
   border-bottom: 1px solid #b4b4b4;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.lblArticuloFooter {
+.lblArticuloFooter, .divAutor {
   display: flex;
   justify-content: space-between;
-}
-
-.divAutor {
-  display: flex;
-  justify-content: space-between;
-
+  align-items: center;
 }
 
 .autor {
-  marging: 0px;
+  margin: 0px 12px;
 }
 
 
@@ -154,37 +156,86 @@ body {
 
 .articulos {
   margin-top: 15px;
+
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .publicacion {
-  display: inline-block;
-  width: 33%;
+  /*display: inline-block;*/
+  width: 290px;
   overflow: hidden;
+
   /*padding: 10px;*/
 }
 
 .publicacion a {
   text-decoration: none;
+  color: #515151;
 }
 
 .imgPublicacion {
-  height: 214px;
   margin: 15px 5px 0 0;
   padding: 0;
 }
 
 .h2Publicacion {
   border-bottom: solid 1px #b7b7b7;
-  color: #515151;
   font-size: 1.4em;
   margin: 5px 0 0 0;
   padding: 0.455em 0 0.909em;
 }
 
 .pubFooter {
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-size: 0.8em;
+  color: #515151;
 }
 
 .pubFooter p {
+  margin: 0;
+}
 
+.paginador {
+
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.paginador ul {
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}
+
+.paginador span {
+  padding: 15px;
+}
+.paginador ul li {
+  background: #eaeaea;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.paginador .seleccion {
+  background: transparent;
+  border: 1px solid transparent;
+}
+.sig:after {
+  content: " >";
+}
+
+.ult:after {
+  content: " >>";
 }
