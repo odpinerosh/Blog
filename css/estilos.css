@@ -1,13 +1,23 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+
 }
+
+a {color: #666;}
 
 h2 {
   margin: 0;
 }
 
 
+.encabezado {
+  background: #1C3643;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
 
 .imgLogo {
   margin: 0;
@@ -17,58 +27,78 @@ h2 {
 .imgLogo img {
   height: 28px;
   width: 89px;
-  padding:12px 0 12px 10px;
+  padding:0 12px;
   cursor: pointer;
 
 }
 
-.encabezado {
-  background: #1C3643;
-  display: flex;
-  justify-content: space-between;
-}
 
 .menu {
-  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
 }
 
 .menu ul {
-  display: inline-block;
+  display: inherit;
+  justify-content: space-between;
   margin: 0;
+  height: inherit;
 }
 
 .menu li {
-  display: inline-block;
+  height: inherit;
   list-style: none;
-
-  padding: 0 15px;
   font-size: 17px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border-top: solid 3px transparent;*/
+
 }
 
 .menu li:hover {
-  border-top: solid 5px #ff4842;
+  /*box-shadow: Dónde se ubica la sombra, x, y, difuminado, color*/
+
+  box-shadow: inset 0 5px 0 red;
+
+  /*border-top: solid 3px #ff4842;*/
+
 }
 
 .menu li a {
   text-decoration: none;
   color: #ffffff;
+  padding: 0 15px;
 }
 
-.linea {
+.menu a.borde {
   border-right: solid 1px #ffffff;
 }
 
-.menu button {
-  display: inline-block;
-  padding: 8px 8px;
-  margin-right: 10px;
-  border-radius: 6px;
-  font-size: 15px;
+.menu .boton {
+  margin: 0 10px;
+}
+
+.boton {
+
+  text-decoration: none;
   cursor: pointer;
   color: #ffffff;
   background: #ff4842;
-  border-color: #d0272a;
+  border-radius: 5px;
+  padding: 5px 10px 10px;
+  margin-right: 5px;
+  font-size: 15px;
+  /*border-bottom: 5px solid #d0272a;*/
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .3);
+  transition: .2s;
+}
+
+.boton:active {
+  transform: scale(.9);
 }
 
 .principal {
@@ -204,9 +234,10 @@ h2 {
 
 .paginador {
 
-  margin: 15px auto;
+  margin: 40px auto;
   display: flex;
   justify-content: center;
+  color: #666;
 
 }
 
@@ -224,8 +255,13 @@ h2 {
 .paginador ul li {
   background: #eaeaea;
   padding: 15px;
-  margin-right: 10px;
+  margin-right: 15px;
   border: 1px solid #ccc;
+}
+
+.paginador a {
+  text-decoration: none;
+
 }
 
 .paginador .seleccion {
